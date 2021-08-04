@@ -1,0 +1,66 @@
+{
+  "$id": "ce_person",
+  "$schema": "https://schema.yext.com/config/km/entity-type/v1",
+  "description": "",
+  "displayName": "Person",
+  "enabled": true,
+  "field": [
+    {
+      "id": "yext/landingPageUrl",
+      "required": false
+    },
+    {
+      "id": "yext/name",
+      "required": true
+    },
+    {
+      "id": "c_acquiaCategory",
+      "required": false
+    },
+    {
+      "id": "c_acquiaDescription",
+      "required": false
+    },
+    {
+      "id": "c_acquiaPlace",
+      "required": false
+    },
+    {
+      "id": "c_jobTitle",
+      "required": false
+    },
+    {
+      "id": "c_personType",
+      "required": false
+    },
+    {
+      "id": "yext/emails",
+      "required": false
+    },
+    {
+      "id": "yext/folder",
+      "required": false
+    },
+    {
+      "id": "yext/photoGallery",
+      "required": false
+    },
+    {
+      "id": "yext/keywords",
+      "required": false
+    },
+    {
+      "id": "yext/labels",
+      "required": false
+    },
+    {
+      "id": "yext/mainPhone",
+      "required": false
+    },
+    {
+      "id": "yext/entityId",
+      "required": true
+    }
+  ],
+  "pluralDisplayName": "People"
+}

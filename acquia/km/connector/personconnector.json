@@ -1,0 +1,130 @@
+{
+  "$id": "acquia_personconnector",
+  "$schema": "https://schema.yext.com/config/km/connector/v1",
+  "displayName": "Acquia Person Connector",
+  "entityType": "ce_person",
+  "source": {
+    "sourceConfig": {
+      "apiPullConfig": {
+        "requestType": "GET",
+        "url": "${{acquiaDomain}}/jsonapi/node/person",
+        "paginationControl": {
+          "cursorPagination": {
+            "cursor": "links/next",
+            "cursorType": "FULL_URL",
+            "detectCursorInHeader": false
+          }
+        },
+        "headers": {
+          "Accept": "application/vnd.api+json",
+          "Content-Type": "application/vnd.api+json"
+        },
+        "queryParams": {
+          "per_page": "50"
+        },
+        "dataFormat": "JSON"
+      }
+    },
+    "baseSelector": {
+      "type": "JSON",
+      "header": "data",
+      "path": "data"
+    },
+    "selectors": [
+      {
+        "type": "JSON",
+        "header": "ID",
+        "path": "id"
+      },
+      {
+        "type": "JSON",
+        "header": "Name",
+        "path": "attributes.title"
+      },
+      {
+        "type": "JSON",
+        "header": "Description",
+        "path": "attributes.body.value"
+      },
+      {
+        "type": "JSON",
+        "header": "Email",
+        "path": "attributes.field_email"
+      },
+      {
+        "type": "JSON",
+        "header": "Job Title",
+        "path": "attributes.field_job_title"
+      },
+      {
+        "type": "JSON",
+        "header": "Phone Number",
+        "path": "attributes.field_person_telephone"
+      },
+      {
+        "type": "JSON",
+        "header": "Landing Page URL",
+        "path": "attributes.path.alias"
+      }
+    ]
+  },
+  "transforms": [
+    {
+      "function": {
+        "inputHeaders": {
+          "headers": [
+            "Landing Page URL"
+          ]
+        },
+        "plugin": "acquia_transforms",
+        "function": "constructUrl"
+      }
+    }
+  ],
+  "mappings": [
+    {
+      "field": "yext/landingPageUrl",
+      "header": "Landing Page URL",
+      "subfieldPath": []
+    },
+    {
+      "field": "yext/emails",
+      "header": "Email",
+      "subfieldPath": []
+    },
+    {
+      "field": "yext/entityId",
+      "header": "ID",
+      "subfieldPath": []
+    },
+    {
+      "field": "c_jobTitle",
+      "header": "Job Title",
+      "subfieldPath": []
+    },
+    {
+      "field": "yext/mainPhone",
+      "header": "Phone Number",
+      "subfieldPath": []
+    },
+    {
+      "field": "yext/name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "c_acquiaDescription",
+      "header": "Description",
+      "subfieldPath": []
+    }
+  ],
+  "scheduleConfig": {
+    "customSchedule": {
+      "timeZone": "America/New_York",
+      "startDate": "2021-06-23",
+      "startTime": "03:00",
+      "frequencyType": "DAILY"
+    },
+    "runMode": "DEFAULT"
+  }
+}

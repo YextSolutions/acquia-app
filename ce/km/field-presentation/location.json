@@ -1,0 +1,333 @@
+{
+  "$id": "ce_location",
+  "$schema": "https://schema.yext.com/config/km/field-presentation/v1",
+  "entityType": "yext/location",
+  "displayName": "Location",
+  "presentationEntries": [
+    {
+      "displayName": "Content",
+      "entryType": "DIVIDER"
+    },
+    {
+      "displayName": "Core Information",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "yext/name",
+          "visibleOnAdd": true
+        },
+        {
+          "id": "yext/categories",
+          "visibleOnAdd": true
+        },
+        {
+          "id": "yext/address",
+          "visibleOnAdd": true
+        },
+        {
+          "id": "yext/addressHidden"
+        },
+        {
+          "id": "yext/mainPhone",
+          "visibleOnAdd": true
+        },
+        {
+          "id": "yext/featuredMessage",
+          "visibleOnAdd": true
+        },
+        {
+          "id": "yext/entityId",
+          "visibleOnAdd": true
+        }
+      ]
+    },
+    {
+      "displayName": "Business Details",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "c_acquiaDescription"
+        },
+        {
+          "id": "yext/description"
+        },
+        {
+          "id": "yext/hours"
+        },
+        {
+          "id": "yext/additionalHoursText"
+        },
+        {
+          "id": "yext/paymentOptions"
+        },
+        {
+          "id": "yext/priceRange"
+        },
+        {
+          "id": "yext/geomodifier"
+        },
+        {
+          "id": "yext/pickupAndDeliveryServices"
+        },
+        {
+          "id": "yext/neighborhood"
+        },
+        {
+          "id": "yext/blackOwnedBusiness"
+        },
+        {
+          "id": "yext/what3WordsAddress"
+        }
+      ]
+    },
+    {
+      "displayName": "Contact, Websites, and Apps",
+      "displayNameTranslations": [
+        {
+          "localeCode": "en",
+          "value": "Contact, Websites and Apps"
+        }
+      ],
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "yext/emails"
+        },
+        {
+          "id": "yext/menuUrl"
+        },
+        {
+          "id": "yext/orderUrl"
+        },
+        {
+          "id": "yext/reservationUrl"
+        },
+        {
+          "id": "yext/websiteUrl"
+        },
+        {
+          "id": "yext/localPhone"
+        },
+        {
+          "id": "yext/alternatePhone"
+        },
+        {
+          "id": "yext/tollFreePhone"
+        },
+        {
+          "id": "yext/mobilePhone"
+        },
+        {
+          "id": "yext/fax"
+        },
+        {
+          "id": "yext/ttyPhone"
+        },
+        {
+          "id": "yext/iosAppUrl"
+        },
+        {
+          "id": "yext/androidAppUrl"
+        }
+      ]
+    },
+    {
+      "displayName": "Media",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "yext/logo"
+        },
+        {
+          "id": "yext/photoGallery"
+        },
+        {
+          "id": "yext/videos"
+        }
+      ]
+    },
+    {
+      "displayName": "Social Media",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "yext/twitterHandle"
+        },
+        {
+          "id": "yext/facebookPageUrl"
+        },
+        {
+          "id": "yext/instagramHandle"
+        }
+      ]
+    },
+    {
+      "displayName": "Enhanced Content Lists",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "yext/productLists"
+        },
+        {
+          "id": "yext/bios"
+        },
+        {
+          "id": "yext/menus"
+        }
+      ]
+    },
+    {
+      "displayName": "Additional Attributes",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "yext/yearEstablished"
+        },
+        {
+          "id": "yext/products"
+        },
+        {
+          "id": "yext/services"
+        },
+        {
+          "id": "yext/specialities"
+        },
+        {
+          "id": "yext/associations"
+        },
+        {
+          "id": "yext/brands"
+        },
+        {
+          "id": "yext/languages"
+        },
+        {
+          "id": "yext/keywords"
+        }
+      ]
+    },
+    {
+      "displayName": "Landing Pages",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "yext/landingPageUrl"
+        }
+      ]
+    },
+    {
+      "displayName": "Additional Hours",
+      "entryType": "DIVIDER"
+    },
+    {
+      "displayName": "Accessibility",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "yext/onlineServiceHours"
+        },
+        {
+          "id": "yext/seniorHours"
+        },
+        {
+          "id": "yext/accessHours"
+        }
+      ]
+    },
+    {
+      "displayName": "Order Pickup",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "yext/pickupHours"
+        },
+        {
+          "id": "yext/driveThroughHours"
+        }
+      ]
+    },
+    {
+      "displayName": "Food and Drink",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "yext/kitchenHours"
+        },
+        {
+          "id": "yext/brunchHours"
+        },
+        {
+          "id": "yext/happyHours"
+        }
+      ]
+    },
+    {
+      "displayName": "Takeout and Delivery",
+      "displayNameTranslations": [
+        {
+          "localeCode": "en",
+          "value": "Takeaway and Delivery"
+        }
+      ],
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "yext/takeoutHours"
+        },
+        {
+          "id": "yext/deliveryHours"
+        }
+      ]
+    },
+    {
+      "displayName": "Other",
+      "entryType": "DIVIDER"
+    },
+    {
+      "displayName": "Internal Use Only",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "yext/closed"
+        },
+        {
+          "id": "yext/folder"
+        },
+        {
+          "id": "yext/labels"
+        },
+        {
+          "id": "yext/isoRegionCode"
+        },
+        {
+          "id": "yext/deliverListingsWithoutGeocode"
+        },
+        {
+          "id": "yext/timezone"
+        }
+      ]
+    },
+    {
+      "displayName": "Settings",
+      "entryType": "DIVIDER"
+    },
+    {
+      "displayName": "Knowledge Assistant",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "yext/primaryConversationContact"
+        },
+        {
+          "id": "yext/holidayHoursConversationEnabled"
+        },
+        {
+          "id": "yext/reviewResponseConversationEnabled"
+        },
+        {
+          "id": "yext/nudgeEnabled"
+        }
+      ]
+    }
+  ]
+}

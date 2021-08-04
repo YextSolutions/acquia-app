@@ -1,0 +1,63 @@
+{
+  "$id": "ce_person",
+  "$schema": "https://schema.yext.com/config/km/field-presentation/v1",
+  "entityType": "ce_person",
+  "displayName": "Person",
+  "presentationEntries": [
+    {
+      "displayName": "Core Information",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "yext/name"
+        },
+        {
+          "id": "yext/entityId"
+        },
+        {
+          "id": "yext/mainPhone",
+          "visibleOnAdd": true
+        },
+        {
+          "id": "c_acquiaCategory"
+        },
+        {
+          "id": "yext/landingPageUrl"
+        }
+      ]
+    },
+    {
+      "displayName": "Person Details",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "yext/emails"
+        },
+        {
+          "id": "c_jobTitle"
+        },
+        {
+          "id": "yext/keywords"
+        },
+        {
+          "id": "c_acquiaDescription"
+        },
+        {
+          "id": "c_acquiaPlace"
+        },
+        {
+          "id": "c_personType"
+        }
+      ]
+    },
+    {
+      "displayName": "Media",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "yext/photoGallery"
+        }
+      ]
+    }
+  ]
+}
