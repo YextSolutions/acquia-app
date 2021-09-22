@@ -2,7 +2,7 @@
   "$id": "location",
   "$schema": "https://schema.yext.com/config/km/entity-type-extension/v1",
   "enabled": true,
-  "entityType": "yext/location",
+  "entityType": "location",
   "field": [
     {
       "id": "c_acquiaDescription",

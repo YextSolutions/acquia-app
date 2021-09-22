@@ -9,20 +9,20 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/name"
+          "id": "name"
         },
         {
-          "id": "yext/entityId"
+          "id": "entityId"
         },
         {
-          "id": "yext/mainPhone",
+          "id": "mainPhone",
           "visibleOnAdd": true
         },
         {
           "id": "c_acquiaCategory"
         },
         {
-          "id": "yext/landingPageUrl"
+          "id": "landingPageUrl"
         }
       ]
     },
@@ -31,13 +31,13 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/emails"
+          "id": "emails"
         },
         {
           "id": "c_jobTitle"
         },
         {
-          "id": "yext/keywords"
+          "id": "keywords"
         },
         {
           "id": "c_acquiaDescription"
@@ -55,7 +55,7 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/photoGallery"
+          "id": "photoGallery"
         }
       ]
     }

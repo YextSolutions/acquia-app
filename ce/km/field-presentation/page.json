@@ -9,7 +9,7 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/name"
+          "id": "name"
         },
         {
           "id": "c_acquiaCategory"
@@ -18,10 +18,10 @@
           "id": "c_acquiaDescription"
         },
         {
-          "id": "yext/keywords"
+          "id": "keywords"
         },
         {
-          "id": "yext/landingPageUrl"
+          "id": "landingPageUrl"
         }
       ]
     },
@@ -30,7 +30,7 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/photoGallery"
+          "id": "photoGallery"
         }
       ]
     }

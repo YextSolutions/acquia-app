@@ -2,7 +2,7 @@
   "$id": "acquia_helparticleconnector",
   "$schema": "https://schema.yext.com/config/km/connector/v1",
   "displayName": "Acquia Help Article Connector",
-  "entityType": "yext/helpArticle",
+  "entityType": "helpArticle",
   "source": {
     "sourceConfig": {
       "apiPullConfig": {
@@ -68,22 +68,22 @@
   ],
   "mappings": [
     {
-      "field": "yext/entityId",
+      "field": "entityId",
       "header": "ID",
       "subfieldPath": []
     },
     {
-      "field": "yext/body",
+      "field": "body",
       "header": "Body",
       "subfieldPath": []
     },
     {
-      "field": "yext/name",
+      "field": "name",
       "header": "Name",
       "subfieldPath": []
     },
     {
-      "field": "yext/landingPageUrl",
+      "field": "landingPageUrl",
       "header": "Landing Page URL",
       "subfieldPath": []
     }

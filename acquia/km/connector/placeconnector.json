@@ -2,7 +2,7 @@
   "$id": "acquia_placeconnector",
   "$schema": "https://schema.yext.com/config/km/connector/v1",
   "displayName": "Acquia Place Connector",
-  "entityType": "yext/location",
+  "entityType": "location",
   "source": {
     "sourceConfig": {
       "apiPullConfig": {
@@ -123,7 +123,7 @@
   ],
   "mappings": [
     {
-      "field": "yext/landingPageUrl",
+      "field": "landingPageUrl",
       "header": "Landing Page URL",
       "subfieldPath": []
     },
@@ -133,7 +133,7 @@
       "subfieldPath": []
     },
     {
-      "field": "yext/address",
+      "field": "address",
       "header": "Postal Code",
       "subfieldPath": [
         {
@@ -142,7 +142,7 @@
       ]
     },
     {
-      "field": "yext/address",
+      "field": "address",
       "header": "Locality",
       "subfieldPath": [
         {
@@ -151,7 +151,7 @@
       ]
     },
     {
-      "field": "yext/address",
+      "field": "address",
       "header": "Administative Area",
       "subfieldPath": [
         {
@@ -160,7 +160,7 @@
       ]
     },
     {
-      "field": "yext/displayCoordinate",
+      "field": "displayCoordinate",
       "header": "Latitude",
       "subfieldPath": [
         {
@@ -169,12 +169,12 @@
       ]
     },
     {
-      "field": "yext/languages",
+      "field": "languages",
       "header": "Language Code",
       "subfieldPath": []
     },
     {
-      "field": "yext/displayCoordinate",
+      "field": "displayCoordinate",
       "header": "Longitude",
       "subfieldPath": [
         {
@@ -183,12 +183,12 @@
       ]
     },
     {
-      "field": "yext/name",
+      "field": "name",
       "header": "Name",
       "subfieldPath": []
     },
     {
-      "field": "yext/address",
+      "field": "address",
       "header": "Sublocality",
       "subfieldPath": [
         {
@@ -197,12 +197,12 @@
       ]
     },
     {
-      "field": "yext/entityId",
+      "field": "entityId",
       "header": "ID",
       "subfieldPath": []
     },
     {
-      "field": "yext/address",
+      "field": "address",
       "header": "Country Code",
       "subfieldPath": [
         {
@@ -211,12 +211,12 @@
       ]
     },
     {
-      "field": "yext/mainPhone",
+      "field": "mainPhone",
       "header": "Phone Number",
       "subfieldPath": []
     },
     {
-      "field": "yext/address",
+      "field": "address",
       "header": "Address Line 1",
       "subfieldPath": [
         {
@@ -225,7 +225,7 @@
       ]
     },
     {
-      "field": "yext/address",
+      "field": "address",
       "header": "Address Line 2",
       "subfieldPath": [
         {
