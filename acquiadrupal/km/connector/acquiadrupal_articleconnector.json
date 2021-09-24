@@ -1,8 +1,8 @@
 {
   "$id": "acquiadrupal_articleconnector",
   "$schema": "https://schema.yext.com/config/km/connector/v1",
-  "displayName": "Acquia Help Article Connector",
-  "entityType": "helpArticle",
+  "displayName": "Acquia Article Connector",
+  "entityType": "acquiadrupal_article",
   "source": {
     "sourceConfig": {
       "apiPullConfig": {
