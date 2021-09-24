@@ -1,8 +1,8 @@
 {
-  "$id": "c_personType",
+  "$id": "acquiadrupal_jobTitle",
   "$schema": "https://schema.yext.com/config/km/field/v1",
-  "description": "Acquia Person Type",
-  "displayName": "Person Type",
+  "description": "Acquia Person - Job Title",
+  "displayName": "Job Title",
   "group": "NONE",
   "localization": "PRIMARY_ONLY",
   "type": {

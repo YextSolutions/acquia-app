@@ -46,7 +46,7 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "c_acquiaDescription"
+          "id": "acquiadrupal_acquiaDescription"
         },
         {
           "id": "yext/description"

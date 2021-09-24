@@ -1,5 +1,5 @@
 {
-  "$id": "ce_person",
+  "$id": "acquiadrupal_person",
   "$schema": "https://schema.yext.com/config/km/entity-type/v1",
   "description": "",
   "displayName": "Person",
@@ -14,23 +14,23 @@
       "required": true
     },
     {
-      "id": "c_acquiaCategory",
+      "id": "acquiadrupal_acquiaCategory",
       "required": false
     },
     {
-      "id": "c_acquiaDescription",
+      "id": "acquiadrupal_acquiaDescription",
       "required": false
     },
     {
-      "id": "c_acquiaPlace",
+      "id": "acquiadrupal_acquiaPlace",
       "required": false
     },
     {
-      "id": "c_jobTitle",
+      "id": "acquiadrupal_jobTitle",
       "required": false
     },
     {
-      "id": "c_personType",
+      "id": "acquiadrupal_personType",
       "required": false
     },
     {

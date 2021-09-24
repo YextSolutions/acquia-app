@@ -5,7 +5,7 @@
   "entityType": "yext/location",
   "field": [
     {
-      "id": "c_acquiaDescription",
+      "id": "acquiadrupal_acquiaDescription",
       "required": false
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "$id": "c_acquiaPlace",
+  "$id": "acquiadrupal_acquiaPlace",
   "$schema": "https://schema.yext.com/config/km/field/v1",
   "description": "Link the Acquia Person Entity to a location ",
   "displayName": "Acquia Place",

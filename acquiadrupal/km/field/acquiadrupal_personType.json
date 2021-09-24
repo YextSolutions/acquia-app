@@ -1,7 +1,8 @@
 {
-  "$id": "c_acquiaCategory",
+  "$id": "acquiadrupal_personType",
   "$schema": "https://schema.yext.com/config/km/field/v1",
-  "displayName": "Acquia Category",
+  "description": "Acquia Person Type",
+  "displayName": "Person Type",
   "group": "NONE",
   "localization": "PRIMARY_ONLY",
   "type": {

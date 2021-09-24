@@ -1,13 +1,13 @@
 {
-  "$id": "acquia_pageconnector",
+  "$id": "acquiadrupal_personconnector",
   "$schema": "https://schema.yext.com/config/km/connector/v1",
-  "displayName": "Acquia Page Connector",
-  "entityType": "ce_page",
+  "displayName": "Acquia Person Connector",
+  "entityType": "acquiadrupal_person",
   "source": {
     "sourceConfig": {
       "apiPullConfig": {
         "requestType": "GET",
-        "url": "${{acquiaDomain}}/jsonapi/node/page",
+        "url": "${{acquiaDomain}}/jsonapi/node/person",
         "paginationControl": {
           "cursorPagination": {
             "cursor": "links/next",
@@ -48,6 +48,21 @@
       },
       {
         "type": "JSON",
+        "header": "Email",
+        "path": "attributes.field_email"
+      },
+      {
+        "type": "JSON",
+        "header": "Job Title",
+        "path": "attributes.field_job_title"
+      },
+      {
+        "type": "JSON",
+        "header": "Phone Number",
+        "path": "attributes.field_person_telephone"
+      },
+      {
+        "type": "JSON",
         "header": "Landing Page URL",
         "path": "attributes.path.alias"
       }
@@ -61,7 +76,7 @@
             "Landing Page URL"
           ]
         },
-        "plugin": "acquia_transforms",
+        "plugin": "acquiadrupal_transforms",
         "function": "constructUrl"
       }
     }
@@ -73,8 +88,23 @@
       "subfieldPath": []
     },
     {
+      "field": "yext/emails",
+      "header": "Email",
+      "subfieldPath": []
+    },
+    {
       "field": "yext/entityId",
       "header": "ID",
+      "subfieldPath": []
+    },
+    {
+      "field": "acquiadrupal_jobTitle",
+      "header": "Job Title",
+      "subfieldPath": []
+    },
+    {
+      "field": "yext/mainPhone",
+      "header": "Phone Number",
       "subfieldPath": []
     },
     {
@@ -83,7 +113,7 @@
       "subfieldPath": []
     },
     {
-      "field": "c_acquiaDescription",
+      "field": "acquiadrupal_acquiaDescription",
       "header": "Description",
       "subfieldPath": []
     }

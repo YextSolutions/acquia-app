@@ -1,5 +1,5 @@
 {
-  "$id": "ce_page",
+  "$id": "acquiadrupal_page",
   "$schema": "https://schema.yext.com/config/km/field-presentation/v1",
   "entityType": "ce_page",
   "displayName": "Page",
@@ -12,10 +12,10 @@
           "id": "yext/name"
         },
         {
-          "id": "c_acquiaCategory"
+          "id": "acquiadrupal_acquiaCategory"
         },
         {
-          "id": "c_acquiaDescription"
+          "id": "acquiadrupal_acquiaDescription"
         },
         {
           "id": "yext/keywords"

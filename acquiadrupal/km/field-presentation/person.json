@@ -19,7 +19,7 @@
           "visibleOnAdd": true
         },
         {
-          "id": "c_acquiaCategory"
+          "id": "acquiadrupal_acquiaCategory"
         },
         {
           "id": "yext/landingPageUrl"
@@ -34,19 +34,19 @@
           "id": "yext/emails"
         },
         {
-          "id": "c_jobTitle"
+          "id": "acquiadrupal_jobTitle"
         },
         {
           "id": "yext/keywords"
         },
         {
-          "id": "c_acquiaDescription"
+          "id": "acquiadrupal_acquiaDescription"
         },
         {
-          "id": "c_acquiaPlace"
+          "id": "acquiadrupal_acquiaPlace"
         },
         {
-          "id": "c_personType"
+          "id": "acquiadrupal_personType"
         }
       ]
     },

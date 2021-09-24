@@ -1,5 +1,5 @@
 {
-  "$id": "acquia_placeconnector",
+  "$id": "acquiadrupal_placeconnector",
   "$schema": "https://schema.yext.com/config/km/connector/v1",
   "displayName": "Acquia Place Connector",
   "entityType": "yext/location",
@@ -116,7 +116,7 @@
             "Landing Page URL"
           ]
         },
-        "plugin": "acquia_transforms",
+        "plugin": "acquiadrupal_transforms",
         "function": "constructUrl"
       }
     }
@@ -128,7 +128,7 @@
       "subfieldPath": []
     },
     {
-      "field": "c_acquiaDescription",
+      "field": "acquiadrupal_acquiaDescription",
       "header": "Description",
       "subfieldPath": []
     },
