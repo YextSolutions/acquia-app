@@ -1,7 +1,7 @@
 {
   "$id": "ce_location",
   "$schema": "https://schema.yext.com/config/km/field-presentation/v1",
-  "entityType": "yext/location",
+  "entityType": "location",
   "displayName": "Location",
   "presentationEntries": [
     {
@@ -13,30 +13,30 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/name",
+          "id": "name",
           "visibleOnAdd": true
         },
         {
-          "id": "yext/categories",
+          "id": "categories",
           "visibleOnAdd": true
         },
         {
-          "id": "yext/address",
+          "id": "address",
           "visibleOnAdd": true
         },
         {
-          "id": "yext/addressHidden"
+          "id": "addressHidden"
         },
         {
-          "id": "yext/mainPhone",
+          "id": "mainPhone",
           "visibleOnAdd": true
         },
         {
-          "id": "yext/featuredMessage",
+          "id": "featuredMessage",
           "visibleOnAdd": true
         },
         {
-          "id": "yext/entityId",
+          "id": "entityId",
           "visibleOnAdd": true
         }
       ]
@@ -49,34 +49,34 @@
           "id": "acquiadrupal_acquiaDescription"
         },
         {
-          "id": "yext/description"
+          "id": "description"
         },
         {
-          "id": "yext/hours"
+          "id": "hours"
         },
         {
-          "id": "yext/additionalHoursText"
+          "id": "additionalHoursText"
         },
         {
-          "id": "yext/paymentOptions"
+          "id": "paymentOptions"
         },
         {
-          "id": "yext/priceRange"
+          "id": "priceRange"
         },
         {
-          "id": "yext/geomodifier"
+          "id": "geomodifier"
         },
         {
-          "id": "yext/pickupAndDeliveryServices"
+          "id": "pickupAndDeliveryServices"
         },
         {
-          "id": "yext/neighborhood"
+          "id": "neighborhood"
         },
         {
-          "id": "yext/blackOwnedBusiness"
+          "id": "blackOwnedBusiness"
         },
         {
-          "id": "yext/what3WordsAddress"
+          "id": "what3WordsAddress"
         }
       ]
     },
@@ -91,43 +91,43 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/emails"
+          "id": "emails"
         },
         {
-          "id": "yext/menuUrl"
+          "id": "menuUrl"
         },
         {
-          "id": "yext/orderUrl"
+          "id": "orderUrl"
         },
         {
-          "id": "yext/reservationUrl"
+          "id": "reservationUrl"
         },
         {
-          "id": "yext/websiteUrl"
+          "id": "websiteUrl"
         },
         {
-          "id": "yext/localPhone"
+          "id": "localPhone"
         },
         {
-          "id": "yext/alternatePhone"
+          "id": "alternatePhone"
         },
         {
-          "id": "yext/tollFreePhone"
+          "id": "tollFreePhone"
         },
         {
-          "id": "yext/mobilePhone"
+          "id": "mobilePhone"
         },
         {
-          "id": "yext/fax"
+          "id": "fax"
         },
         {
-          "id": "yext/ttyPhone"
+          "id": "ttyPhone"
         },
         {
-          "id": "yext/iosAppUrl"
+          "id": "iosAppUrl"
         },
         {
-          "id": "yext/androidAppUrl"
+          "id": "androidAppUrl"
         }
       ]
     },
@@ -136,13 +136,13 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/logo"
+          "id": "logo"
         },
         {
-          "id": "yext/photoGallery"
+          "id": "photoGallery"
         },
         {
-          "id": "yext/videos"
+          "id": "videos"
         }
       ]
     },
@@ -151,13 +151,13 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/twitterHandle"
+          "id": "twitterHandle"
         },
         {
-          "id": "yext/facebookPageUrl"
+          "id": "facebookPageUrl"
         },
         {
-          "id": "yext/instagramHandle"
+          "id": "instagramHandle"
         }
       ]
     },
@@ -166,13 +166,13 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/productLists"
+          "id": "productLists"
         },
         {
-          "id": "yext/bios"
+          "id": "bios"
         },
         {
-          "id": "yext/menus"
+          "id": "menus"
         }
       ]
     },
@@ -181,28 +181,28 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/yearEstablished"
+          "id": "yearEstablished"
         },
         {
-          "id": "yext/products"
+          "id": "products"
         },
         {
-          "id": "yext/services"
+          "id": "services"
         },
         {
-          "id": "yext/specialities"
+          "id": "specialities"
         },
         {
-          "id": "yext/associations"
+          "id": "associations"
         },
         {
-          "id": "yext/brands"
+          "id": "brands"
         },
         {
-          "id": "yext/languages"
+          "id": "languages"
         },
         {
-          "id": "yext/keywords"
+          "id": "keywords"
         }
       ]
     },
@@ -211,7 +211,7 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/landingPageUrl"
+          "id": "landingPageUrl"
         }
       ]
     },
@@ -224,13 +224,13 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/onlineServiceHours"
+          "id": "onlineServiceHours"
         },
         {
-          "id": "yext/seniorHours"
+          "id": "seniorHours"
         },
         {
-          "id": "yext/accessHours"
+          "id": "accessHours"
         }
       ]
     },
@@ -239,10 +239,10 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/pickupHours"
+          "id": "pickupHours"
         },
         {
-          "id": "yext/driveThroughHours"
+          "id": "driveThroughHours"
         }
       ]
     },
@@ -251,13 +251,13 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/kitchenHours"
+          "id": "kitchenHours"
         },
         {
-          "id": "yext/brunchHours"
+          "id": "brunchHours"
         },
         {
-          "id": "yext/happyHours"
+          "id": "happyHours"
         }
       ]
     },
@@ -272,10 +272,10 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/takeoutHours"
+          "id": "takeoutHours"
         },
         {
-          "id": "yext/deliveryHours"
+          "id": "deliveryHours"
         }
       ]
     },
@@ -288,22 +288,22 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/closed"
+          "id": "closed"
         },
         {
-          "id": "yext/folder"
+          "id": "folder"
         },
         {
-          "id": "yext/labels"
+          "id": "labels"
         },
         {
-          "id": "yext/isoRegionCode"
+          "id": "isoRegionCode"
         },
         {
-          "id": "yext/deliverListingsWithoutGeocode"
+          "id": "deliverListingsWithoutGeocode"
         },
         {
-          "id": "yext/timezone"
+          "id": "timezone"
         }
       ]
     },
@@ -316,16 +316,16 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/primaryConversationContact"
+          "id": "primaryConversationContact"
         },
         {
-          "id": "yext/holidayHoursConversationEnabled"
+          "id": "holidayHoursConversationEnabled"
         },
         {
-          "id": "yext/reviewResponseConversationEnabled"
+          "id": "reviewResponseConversationEnabled"
         },
         {
-          "id": "yext/nudgeEnabled"
+          "id": "nudgeEnabled"
         }
       ]
     }

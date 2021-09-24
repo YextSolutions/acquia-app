@@ -7,11 +7,11 @@
   "localization": "PRIMARY_ONLY",
   "type": {
     "listType": {
-      "typeId": "yext/entityReference",
+      "typeId": "entityReference",
       "type": {
         "entityReferenceType": {}
       }
     }
   },
-  "typeId": "yext/list"
+  "typeId": "list"
 }

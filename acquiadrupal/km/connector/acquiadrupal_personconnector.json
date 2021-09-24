@@ -83,17 +83,17 @@
   ],
   "mappings": [
     {
-      "field": "yext/landingPageUrl",
+      "field": "landingPageUrl",
       "header": "Landing Page URL",
       "subfieldPath": []
     },
     {
-      "field": "yext/emails",
+      "field": "emails",
       "header": "Email",
       "subfieldPath": []
     },
     {
-      "field": "yext/entityId",
+      "field": "entityId",
       "header": "ID",
       "subfieldPath": []
     },
@@ -103,12 +103,12 @@
       "subfieldPath": []
     },
     {
-      "field": "yext/mainPhone",
+      "field": "mainPhone",
       "header": "Phone Number",
       "subfieldPath": []
     },
     {
-      "field": "yext/name",
+      "field": "name",
       "header": "Name",
       "subfieldPath": []
     },
