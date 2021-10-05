@@ -10,7 +10,7 @@
         "url": "${{acquiaDomain}}/jsonapi/node/person",
         "paginationControl": {
           "cursorPagination": {
-            "cursor": "links/next",
+            "cursor": "links.next",
             "cursorType": "FULL_URL",
             "detectCursorInHeader": false
           }
