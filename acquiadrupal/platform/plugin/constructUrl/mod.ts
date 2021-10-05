@@ -1,5 +1,6 @@
 declare var domain: string;
 
-export function constructUrl(s: string) {
-    return domain + s;
+export function constructUrl(nodeId: string) {
+	var fullUrl = domain + "/node/" + nodeId
+    return fullUrl;
 }

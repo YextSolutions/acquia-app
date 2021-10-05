@@ -61,7 +61,7 @@
             "Landing Page URL"
           ]
         },
-        "plugin": "acquiadrupal_transforms",
+        "plugin": "acquiadrupal_constructUrl",
         "function": "constructUrl"
       }
     }
