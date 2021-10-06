@@ -1,0 +1,17 @@
+{
+  "$id": "acquiaDrupalPerson_acquiaPlace",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "Link the Acquia Person Entity to a location ",
+  "displayName": "Acquia Place",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "listType": {
+      "typeId": "entityReference",
+      "type": {
+        "entityReferenceType": {}
+      }
+    }
+  },
+  "typeId": "list"
+}

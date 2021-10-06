@@ -1,0 +1,34 @@
+{
+  "$id": "acquiaDrupalArticle_article",
+  "$schema": "https://schema.yext.com/config/km/entity-type/v1",
+  "description": "",
+  "displayName": "Acquia Article",
+  "enabled": true,
+  "field": [
+    {
+      "id": "landingPageUrl",
+      "required": false
+    },
+    {
+      "id": "name",
+      "required": true
+    },
+    {
+      "id": "body",
+      "required": false
+    },
+    {
+      "id": "folder",
+      "required": false
+    },
+    {
+      "id": "labels",
+      "required": false
+    },
+    {
+      "id": "entityId",
+      "required": true
+    }
+  ],
+  "pluralDisplayName": "Articles"
+}

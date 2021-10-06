@@ -1,0 +1,66 @@
+{
+  "$id": "acquiaDrupalPerson_person",
+  "$schema": "https://schema.yext.com/config/km/entity-type/v1",
+  "description": "",
+  "displayName": "Acquia Person",
+  "enabled": true,
+  "field": [
+    {
+      "id": "landingPageUrl",
+      "required": false
+    },
+    {
+      "id": "name",
+      "required": true
+    },
+    {
+      "id": "acquiaDrupalPerson_acquiaCategory",
+      "required": false
+    },
+    {
+      "id": "acquiaDrupalPerson_acquiaDescription",
+      "required": false
+    },
+    {
+      "id": "acquiaDrupalPerson_acquiaPlace",
+      "required": false
+    },
+    {
+      "id": "acquiaDrupalPerson_jobTitle",
+      "required": false
+    },
+    {
+      "id": "acquiaDrupalPerson_personType",
+      "required": false
+    },
+    {
+      "id": "emails",
+      "required": false
+    },
+    {
+      "id": "folder",
+      "required": false
+    },
+    {
+      "id": "photoGallery",
+      "required": false
+    },
+    {
+      "id": "keywords",
+      "required": false
+    },
+    {
+      "id": "labels",
+      "required": false
+    },
+    {
+      "id": "mainPhone",
+      "required": false
+    },
+    {
+      "id": "entityId",
+      "required": true
+    }
+  ],
+  "pluralDisplayName": "People"
+}

@@ -1,0 +1,100 @@
+{
+  "$id": "acquiaDrupalPage_pageconnector",
+  "$schema": "https://schema.yext.com/config/km/connector/v1",
+  "displayName": "Acquia Page Connector",
+  "entityType": "acquiaDrupalPage_page",
+  "source": {
+    "sourceConfig": {
+      "apiPullConfig": {
+        "requestType": "GET",
+        "url": "${{acquiaDomain}}/jsonapi/node/page",
+        "paginationControl": {
+          "cursorPagination": {
+            "cursor": "links.next",
+            "cursorType": "FULL_URL",
+            "detectCursorInHeader": false
+          }
+        },
+        "headers": {
+          "Accept": "application/vnd.api+json",
+          "Content-Type": "application/vnd.api+json"
+        },
+        "queryParams": {
+          "per_page": "50"
+        },
+        "dataFormat": "JSON"
+      }
+    },
+    "baseSelector": {
+      "type": "JSON",
+      "header": "data",
+      "path": "data"
+    },
+    "selectors": [
+      {
+        "type": "JSON",
+        "header": "ID",
+        "path": "id"
+      },
+      {
+        "type": "JSON",
+        "header": "Name",
+        "path": "attributes.title"
+      },
+      {
+        "type": "JSON",
+        "header": "Description",
+        "path": "attributes.body.value"
+      },
+      {
+        "type": "JSON",
+        "header": "Landing Page URL",
+        "path": "attributes.path.alias"
+      }
+    ]
+  },
+  "transforms": [
+    {
+      "function": {
+        "inputHeaders": {
+          "headers": [
+            "Landing Page URL"
+          ]
+        },
+        "plugin": "acquiaDrupalPage_constructUrl",
+        "function": "constructUrl"
+      }
+    }
+  ],
+  "mappings": [
+    {
+      "field": "landingPageUrl",
+      "header": "Landing Page URL",
+      "subfieldPath": []
+    },
+    {
+      "field": "entityId",
+      "header": "ID",
+      "subfieldPath": []
+    },
+    {
+      "field": "name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "acquiaDrupalPage_acquiaDescription",
+      "header": "Description",
+      "subfieldPath": []
+    }
+  ],
+  "scheduleConfig": {
+    "customSchedule": {
+      "timeZone": "America/New_York",
+      "startDate": "2021-06-23",
+      "startTime": "03:00",
+      "frequencyType": "DAILY"
+    },
+    "runMode": "DEFAULT"
+  }
+}

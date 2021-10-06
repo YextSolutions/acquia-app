@@ -1,0 +1,246 @@
+{
+  "$id": "acquiaDrupalPlace_placeconnector",
+  "$schema": "https://schema.yext.com/config/km/connector/v1",
+  "displayName": "Acquia Place Connector",
+  "entityType": "location",
+  "source": {
+    "sourceConfig": {
+      "apiPullConfig": {
+        "requestType": "GET",
+        "url": "${{acquiaDomain}}/jsonapi/node/place",
+        "paginationControl": {
+          "cursorPagination": {
+            "cursor": "links.next",
+            "cursorType": "FULL_URL",
+            "detectCursorInHeader": false
+          }
+        },
+        "headers": {
+          "Accept": "application/vnd.api+json",
+          "Content-Type": "application/vnd.api+json"
+        },
+        "queryParams": {
+          "per_page": "50"
+        },
+        "dataFormat": "JSON"
+      }
+    },
+    "baseSelector": {
+      "type": "JSON",
+      "header": "data",
+      "path": "data"
+    },
+    "selectors": [
+      {
+        "type": "JSON",
+        "header": "ID",
+        "path": "id"
+      },
+      {
+        "type": "JSON",
+        "header": "Name",
+        "path": "attributes.title"
+      },
+      {
+        "type": "JSON",
+        "header": "Description",
+        "path": "attributes.body.value"
+      },
+      {
+        "type": "JSON",
+        "header": "Address Line 1",
+        "path": "attributes.field_place_address.address_line1"
+      },
+      {
+        "type": "JSON",
+        "header": "Address Line 2",
+        "path": "attributes.field_place_address.address_line2"
+      },
+      {
+        "type": "JSON",
+        "header": "Sublocality",
+        "path": "attributes.field_place_address.dependent_locality"
+      },
+      {
+        "type": "JSON",
+        "header": "Locality",
+        "path": "attributes.field_place_address.locality"
+      },
+      {
+        "type": "JSON",
+        "header": "Administative Area",
+        "path": "attributes.field_place_address.administrative_area"
+      },
+      {
+        "type": "JSON",
+        "header": "Country Code",
+        "path": "attributes.field_place_address.country_code"
+      },
+      {
+        "type": "JSON",
+        "header": "Postal Code",
+        "path": "attributes.field_place_address.postal_code"
+      },
+      {
+        "type": "JSON",
+        "header": "Language Code",
+        "path": "attributes.langcode"
+      },
+      {
+        "type": "JSON",
+        "header": "Phone Number",
+        "path": "attributes.field_place_telephone"
+      },
+      {
+        "type": "JSON",
+        "header": "Latitude",
+        "path": "attributes.field_geofield.lat"
+      },
+      {
+        "type": "JSON",
+        "header": "Longitude",
+        "path": "attributes.field_geofield.lon"
+      },
+      {
+        "type": "JSON",
+        "header": "Landing Page URL",
+        "path": "attributes.path.alias"
+      }
+    ]
+  },
+  "transforms": [
+    {
+      "function": {
+        "inputHeaders": {
+          "headers": [
+            "Landing Page URL"
+          ]
+        },
+        "plugin": "acquiaDrupalPlace_constructUrl",
+        "function": "constructUrl"
+      }
+    }
+  ],
+  "mappings": [
+    {
+      "field": "landingPageUrl",
+      "header": "Landing Page URL",
+      "subfieldPath": []
+    },
+    {
+      "field": "acquiaDrupalPlace_acquiaDescription",
+      "header": "Description",
+      "subfieldPath": []
+    },
+    {
+      "field": "address",
+      "header": "Postal Code",
+      "subfieldPath": [
+        {
+          "name": "postalCode"
+        }
+      ]
+    },
+    {
+      "field": "address",
+      "header": "Locality",
+      "subfieldPath": [
+        {
+          "name": "city"
+        }
+      ]
+    },
+    {
+      "field": "address",
+      "header": "Administative Area",
+      "subfieldPath": [
+        {
+          "name": "region"
+        }
+      ]
+    },
+    {
+      "field": "displayCoordinate",
+      "header": "Latitude",
+      "subfieldPath": [
+        {
+          "name": "latitude"
+        }
+      ]
+    },
+    {
+      "field": "languages",
+      "header": "Language Code",
+      "subfieldPath": []
+    },
+    {
+      "field": "displayCoordinate",
+      "header": "Longitude",
+      "subfieldPath": [
+        {
+          "name": "longitude"
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "address",
+      "header": "Sublocality",
+      "subfieldPath": [
+        {
+          "name": "sublocality"
+        }
+      ]
+    },
+    {
+      "field": "entityId",
+      "header": "ID",
+      "subfieldPath": []
+    },
+    {
+      "field": "address",
+      "header": "Country Code",
+      "subfieldPath": [
+        {
+          "name": "countryCode"
+        }
+      ]
+    },
+    {
+      "field": "mainPhone",
+      "header": "Phone Number",
+      "subfieldPath": []
+    },
+    {
+      "field": "address",
+      "header": "Address Line 1",
+      "subfieldPath": [
+        {
+          "name": "line1"
+        }
+      ]
+    },
+    {
+      "field": "address",
+      "header": "Address Line 2",
+      "subfieldPath": [
+        {
+          "name": "line2"
+        }
+      ]
+    }
+  ],
+  "scheduleConfig": {
+    "customSchedule": {
+      "timeZone": "America/New_York",
+      "startDate": "2021-06-23",
+      "startTime": "03:00",
+      "frequencyType": "DAILY"
+    },
+    "runMode": "DEFAULT"
+  }
+}

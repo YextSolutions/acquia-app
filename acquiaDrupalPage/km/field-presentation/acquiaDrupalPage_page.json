@@ -1,0 +1,38 @@
+{
+  "$id": "acquiaDrupalPage_page",
+  "$schema": "https://schema.yext.com/config/km/field-presentation/v1",
+  "entityType": "acquiaDrupalPage_page",
+  "displayName": "Acquia Page",
+  "presentationEntries": [
+    {
+      "displayName": "Page Details",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "name"
+        },
+        {
+          "id": "acquiaDrupalPage_acquiaCategory"
+        },
+        {
+          "id": "acquiaDrupalPage_acquiaDescription"
+        },
+        {
+          "id": "keywords"
+        },
+        {
+          "id": "landingPageUrl"
+        }
+      ]
+    },
+    {
+      "displayName": "Media",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "photoGallery"
+        }
+      ]
+    }
+  ]
+}

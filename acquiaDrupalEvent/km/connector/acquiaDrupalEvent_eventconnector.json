@@ -1,0 +1,169 @@
+{
+  "$id": "acquiaDrupalEvent_eventconnector",
+  "$schema": "https://schema.yext.com/config/km/connector/v1",
+  "displayName": "Acquia Event Connector",
+  "entityType": "event",
+  "source": {
+    "sourceConfig": {
+      "apiPullConfig": {
+        "requestType": "GET",
+        "url": "${{acquiaDomain}}/jsonapi/node/event",
+        "paginationControl": {
+          "cursorPagination": {
+            "cursor": "links.next",
+            "cursorType": "FULL_URL",
+            "detectCursorInHeader": false
+          }
+        },
+        "headers": {
+          "Accept": "application/vnd.api+json",
+          "Content-Type": "application/vnd.api+json"
+        },
+        "queryParams": {
+          "per_page": "50"
+        },
+        "dataFormat": "JSON"
+      }
+    },
+    "baseSelector": {
+      "type": "JSON",
+      "header": "data",
+      "path": "data"
+    },
+    "selectors": [
+      {
+        "type": "JSON",
+        "header": "ID",
+        "path": "id"
+      },
+      {
+        "type": "JSON",
+        "header": "Name",
+        "path": "attributes.title"
+      },
+      {
+        "type": "JSON",
+        "header": "Description",
+        "path": "attributes.body.value"
+      },
+      {
+        "type": "JSON",
+        "header": "Door Time",
+        "path": "attributes.field_door_time"
+      },
+      {
+        "type": "JSON",
+        "header": "Event Start",
+        "path": "attributes.field_event_start"
+      },
+      {
+        "type": "JSON",
+        "header": "Event End",
+        "path": "attributes.field_event_end"
+      },
+      {
+        "type": "JSON",
+        "header": "Event Duration",
+        "path": "attributes.field_event_duration"
+      },
+      {
+        "type": "JSON",
+        "header": "Location",
+        "path": "relationships.field_event_place.data.id"
+      },
+      {
+        "type": "JSON",
+        "header": "Landing Page URL",
+        "path": "attributes.path.alias"
+      }
+    ]
+  },
+  "transforms": [
+    {
+      "function": {
+        "inputHeaders": {
+          "headers": [
+            "Landing Page URL"
+          ]
+        },
+        "plugin": "acquiaDrupalEvent_constructUrl",
+        "function": "constructUrl"
+      }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "Door Time",
+            "Event Start",
+            "Event End"
+          ]
+        },
+        "valueToFind": {
+          "regex": "-[0-9]{1,2}:[0-9]{2}"
+        },
+        "replacement": ""
+      }
+    },
+    {
+      "addColumn": {
+        "newColumnHeader": "Time Zone",
+        "columnValue": "America/New_York"
+      }
+    }
+  ],
+  "mappings": [
+    {
+      "field": "landingPageUrl",
+      "header": "Landing Page URL",
+      "subfieldPath": []
+    },
+    {
+      "field": "time",
+      "header": "Event Start",
+      "subfieldPath": [
+        {
+          "name": "start"
+        }
+      ]
+    },
+    {
+      "field": "entityId",
+      "header": "ID",
+      "subfieldPath": []
+    },
+    {
+      "field": "time",
+      "header": "Event End",
+      "subfieldPath": [
+        {
+          "name": "end"
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "linkedLocation",
+      "header": "Location",
+      "subfieldPath": []
+    },
+    {
+      "field": "timezone",
+      "header": "Time Zone",
+      "subfieldPath": []
+    }
+  ],
+  "scheduleConfig": {
+    "customSchedule": {
+      "timeZone": "America/New_York",
+      "startDate": "2021-06-23",
+      "startTime": "03:00",
+      "frequencyType": "DAILY"
+    },
+    "runMode": "DEFAULT"
+  }
+}
