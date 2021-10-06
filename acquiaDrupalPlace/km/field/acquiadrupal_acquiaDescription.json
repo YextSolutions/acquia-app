@@ -1,5 +1,5 @@
 {
-  "$id": "acquiadrupal_acquiaDescription",
+  "$id": "acquiaDrupalPlace_acquiaDescription",
   "$schema": "https://schema.yext.com/config/km/field/v1",
   "description": "Rich Text Description for Acquia Content Types",
   "displayName": "Acquia Description",
