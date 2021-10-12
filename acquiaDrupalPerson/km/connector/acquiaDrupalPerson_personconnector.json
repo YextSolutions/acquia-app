@@ -64,7 +64,7 @@
       {
         "type": "JSON",
         "header": "Landing Page URL",
-        "path": "attributes.path.alias"
+        "path": "attributes.drupal_internal__nid"
       }
     ]
   },
