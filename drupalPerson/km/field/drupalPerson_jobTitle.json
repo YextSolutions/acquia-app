@@ -1,7 +1,7 @@
 {
-  "$id": "acquiaDrupalPerson_jobTitle",
+  "$id": "drupalPerson_jobTitle",
   "$schema": "https://schema.yext.com/config/km/field/v1",
-  "description": "Acquia Person - Job Title",
+  "description": "",
   "displayName": "Job Title",
   "group": "NONE",
   "localization": "PRIMARY_ONLY",

@@ -1,8 +1,8 @@
 {
-  "$id": "acquiaDrupalPerson_acquiaDescription",
+  "$id": "drupalPerson_drupalDescription",
   "$schema": "https://schema.yext.com/config/km/field/v1",
-  "description": "Rich Text Description for Acquia Content Types",
-  "displayName": "Acquia Description",
+  "description": "Rich Text Description for Drupal Content Types",
+  "displayName": "Drupal Description",
   "group": "NONE",
   "localization": "PRIMARY_ONLY",
   "type": {

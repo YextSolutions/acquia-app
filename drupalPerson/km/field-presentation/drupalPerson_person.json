@@ -1,7 +1,7 @@
 {
-  "$id": "acquiaDrupalPerson_person",
+  "$id": "drupalPerson_person",
   "$schema": "https://schema.yext.com/config/km/field-presentation/v1",
-  "entityType": "acquiaDrupalPerson_person",
+  "entityType": "drupalPerson_person",
   "displayName": "Person",
   "presentationEntries": [
     {
@@ -31,19 +31,16 @@
           "id": "emails"
         },
         {
-          "id": "acquiaDrupalPerson_jobTitle"
+          "id": "drupalPerson_jobTitle"
         },
         {
           "id": "keywords"
         },
         {
-          "id": "acquiaDrupalPerson_acquiaDescription"
+          "id": "drupalPerson_drupalDescription"
         },
         {
-          "id": "acquiaDrupalPerson_acquiaPlace"
-        },
-        {
-          "id": "acquiaDrupalPerson_personType"
+          "id": "drupalPerson_drupalPlace"
         }
       ]
     },

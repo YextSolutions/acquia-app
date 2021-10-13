@@ -1,13 +1,13 @@
 {
-  "$id": "acquiaDrupalPerson_personconnector",
+  "$id": "drupalPerson_personconnector",
   "$schema": "https://schema.yext.com/config/km/connector/v1",
-  "displayName": "Acquia Person Connector",
-  "entityType": "acquiaDrupalPerson_person",
+  "displayName": "Drupal Person Connector",
+  "entityType": "drupalPerson_person",
   "source": {
     "sourceConfig": {
       "apiPullConfig": {
         "requestType": "GET",
-        "url": "${{acquiaDomain}}/jsonapi/node/person",
+        "url": "${{drupalDomain}}/jsonapi/node/person",
         "paginationControl": {
           "cursorPagination": {
             "cursor": "links.next",
@@ -76,7 +76,7 @@
             "Landing Page URL"
           ]
         },
-        "plugin": "acquiaDrupalPerson_constructUrl",
+        "plugin": "drupalPerson_constructUrl",
         "function": "constructUrl"
       }
     }
@@ -98,7 +98,7 @@
       "subfieldPath": []
     },
     {
-      "field": "acquiaDrupalPerson_jobTitle",
+      "field": "drupalPerson_jobTitle",
       "header": "Job Title",
       "subfieldPath": []
     },
@@ -113,7 +113,7 @@
       "subfieldPath": []
     },
     {
-      "field": "acquiaDrupalPerson_acquiaDescription",
+      "field": "drupalPerson_drupalDescription",
       "header": "Description",
       "subfieldPath": []
     }
