@@ -125,6 +125,6 @@
       "startTime": "03:00",
       "frequencyType": "DAILY"
     },
-    "runMode": "DEFAULT"
+    "runMode": "COMPREHENSIVE"
   }
 }
