@@ -1,0 +1,15 @@
+{
+  "$id": "drupalPerson_person.default",
+  "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
+  "name": "Drupal Person-default",
+  "entityType": "drupalPerson_person",
+  "fields": [
+    "landingPageUrl",
+    "drupalPerson_drupalDescription",
+    "drupalPerson_jobTitle",
+    "emails",
+    "photoGallery",
+    "keywords",
+    "mainPhone"
+  ]
+}
