@@ -1,54 +1,7 @@
 {
   "$id": "drupalPerson_person",
-  "$schema": "https://schema.yext.com/config/km/entity-type/v1",
+  "$schema": "https://schema.yext.com/config/km/entity-type/v2",
   "description": "",
   "displayName": "Drupal Person",
-  "enabled": true,
-  "field": [
-    {
-      "id": "landingPageUrl",
-      "required": false
-    },
-    {
-      "id": "name",
-      "required": true
-    },
-    {
-      "id": "drupalPerson_drupalDescription",
-      "required": false
-    },
-    {
-      "id": "drupalPerson_jobTitle",
-      "required": false
-    },
-    {
-      "id": "emails",
-      "required": false
-    },
-    {
-      "id": "folder",
-      "required": false
-    },
-    {
-      "id": "photoGallery",
-      "required": false
-    },
-    {
-      "id": "keywords",
-      "required": false
-    },
-    {
-      "id": "labels",
-      "required": false
-    },
-    {
-      "id": "mainPhone",
-      "required": false
-    },
-    {
-      "id": "entityId",
-      "required": true
-    }
-  ],
   "pluralDisplayName": "People"
 }
