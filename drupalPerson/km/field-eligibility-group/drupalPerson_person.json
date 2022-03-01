@@ -1,7 +1,7 @@
 {
-  "$id": "drupalPerson_person.default",
+  "$id": "drupalPerson_person",
   "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
-  "name": "Drupal Person-default",
+  "name": "Drupal Person",
   "entityType": "drupalPerson_person",
   "fields": [
     "landingPageUrl",
