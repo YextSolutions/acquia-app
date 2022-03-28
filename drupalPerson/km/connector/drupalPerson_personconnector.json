@@ -5,30 +5,13 @@
   "entityType": "drupalPerson_person",
   "source": {
     "sourceConfig": {
-      "apiPullConfig": {
-        "requestType": "GET",
-        "url": "${{drupalDomain}}/jsonapi/node/person",
-        "paginationControl": {
-          "cursorPagination": {
-            "cursor": "links.next",
-            "cursorType": "FULL_URL",
-            "detectCursorInHeader": false
-          }
-        },
-        "headers": {
-          "Accept": "application/vnd.api+json",
-          "Content-Type": "application/vnd.api+json"
-        },
-        "queryParams": {
-          "per_page": "50"
-        },
-        "dataFormat": "JSON"
+      "nativeSourceConfig": {
+        "source": "drupal",
+        "operation": "fetchPersonContent",
+        "inputs": {
+          "drupalDomain": "${{drupalDomain}}"
+        }
       }
-    },
-    "baseSelector": {
-      "type": "JSON",
-      "header": "data",
-      "path": "data"
     },
     "selectors": [
       {
