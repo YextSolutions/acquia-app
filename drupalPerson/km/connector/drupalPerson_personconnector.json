@@ -1,113 +1,123 @@
 {
-  "$id": "drupalPerson_personconnector",
-  "$schema": "https://schema.yext.com/config/km/connector/v2",
-  "displayName": "Drupal Person Connector",
-  "entityType": "drupalPerson_person",
-  "source": {
-    "sourceConfig": {
-      "nativeSourceConfig": {
-        "source": "drupal",
-        "operation": "fetchPersonContent",
-        "inputs": {
-          "drupalDomain": "${{drupalDomain}}"
-        }
-      }
-    },
-    "selectors": [
-      {
-        "type": "JSON",
-        "header": "ID",
-        "path": "id"
-      },
-      {
-        "type": "JSON",
-        "header": "Name",
-        "path": "attributes.title"
-      },
-      {
-        "type": "JSON",
-        "header": "Description",
-        "path": "attributes.body.value"
-      },
-      {
-        "type": "JSON",
-        "header": "Email",
-        "path": "attributes.field_email"
-      },
-      {
-        "type": "JSON",
-        "header": "Job Title",
-        "path": "attributes.field_job_title"
-      },
-      {
-        "type": "JSON",
-        "header": "Phone Number",
-        "path": "attributes.field_person_telephone"
-      },
-      {
-        "type": "JSON",
-        "header": "Landing Page URL",
-        "path": "attributes.drupal_internal__nid"
-      }
-    ]
-  },
-  "transforms": [
-    {
-      "function": {
-        "inputHeaders": {
-          "headers": [
-            "Landing Page URL"
-          ]
+    "$id": "drupalPerson_personconnector",
+    "$schema": "https://schema.yext.com/config/km/connector/v4",
+    "displayName": "Drupal Person Connector",
+    "entityTypes": [
+        "drupalPerson_person"
+    ],
+    "source": {
+        "sourceConfig": {
+            "nativeSourceConfig": {
+                "source": "drupal",
+                "operation": "fetchPersonContent",
+                "inputs": {
+                    "drupalDomain": "${{drupalDomain}}"
+                }
+            }
         },
-        "plugin": "drupalPerson_constructUrl",
-        "function": "constructUrl"
-      }
+        "selectors": [
+            {
+                "type": "JSON",
+                "header": "ID",
+                "path": "id"
+            },
+            {
+                "type": "JSON",
+                "header": "Name",
+                "path": "attributes.title"
+            },
+            {
+                "type": "JSON",
+                "header": "Description",
+                "path": "attributes.body.value"
+            },
+            {
+                "type": "JSON",
+                "header": "Email",
+                "path": "attributes.field_email"
+            },
+            {
+                "type": "JSON",
+                "header": "Job Title",
+                "path": "attributes.field_job_title"
+            },
+            {
+                "type": "JSON",
+                "header": "Phone Number",
+                "path": "attributes.field_person_telephone"
+            },
+            {
+                "type": "JSON",
+                "header": "Landing Page URL",
+                "path": "attributes.drupal_internal__nid"
+            }
+        ]
+    },
+    "transforms": [
+        {
+            "function": {
+                "inputHeaders": {
+                    "headers": [
+                        "Landing Page URL"
+                    ]
+                },
+                "plugin": "drupalPerson_constructUrl",
+                "function": "constructUrl"
+            }
+        }
+    ],
+    "mappings": [
+        {
+            "field": "landingPageUrl",
+            "header": "Landing Page URL",
+            "subfieldPath": []
+        },
+        {
+            "field": "emails",
+            "header": "Email",
+            "subfieldPath": []
+        },
+        {
+            "field": "entityId",
+            "header": "ID",
+            "subfieldPath": []
+        },
+        {
+            "field": "drupalPerson_jobTitle",
+            "header": "Job Title",
+            "subfieldPath": []
+        },
+        {
+            "field": "mainPhone",
+            "header": "Phone Number",
+            "subfieldPath": []
+        },
+        {
+            "field": "name",
+            "header": "Name",
+            "subfieldPath": []
+        },
+        {
+            "field": "drupalPerson_drupalDescription",
+            "header": "Description",
+            "subfieldPath": [
+                {
+                    "name": "markdown"
+                }
+            ]
+        }
+    ],
+    "scheduleConfig": {
+        "customSchedule": {
+            "timeZone": "America/New_York",
+            "startDate": "2021-06-23",
+            "startTime": "03:00",
+            "frequencyType": "DAILY"
+        },
+        "runMode": "COMPREHENSIVE"
+    },
+    "comprehensiveModeConfig": {
+        "comprehensiveSet": "ENTITIES_CREATED_BY_THIS_CONNECTOR",
+        "actionOnMissingEntities": "DELETE"
     }
-  ],
-  "mappings": [
-    {
-      "field": "landingPageUrl",
-      "header": "Landing Page URL",
-      "subfieldPath": []
-    },
-    {
-      "field": "emails",
-      "header": "Email",
-      "subfieldPath": []
-    },
-    {
-      "field": "entityId",
-      "header": "ID",
-      "subfieldPath": []
-    },
-    {
-      "field": "drupalPerson_jobTitle",
-      "header": "Job Title",
-      "subfieldPath": []
-    },
-    {
-      "field": "mainPhone",
-      "header": "Phone Number",
-      "subfieldPath": []
-    },
-    {
-      "field": "name",
-      "header": "Name",
-      "subfieldPath": []
-    },
-    {
-      "field": "drupalPerson_drupalDescription",
-      "header": "Description",
-      "subfieldPath": []
-    }
-  ],
-  "scheduleConfig": {
-    "customSchedule": {
-      "timeZone": "America/New_York",
-      "startDate": "2021-06-23",
-      "startTime": "03:00",
-      "frequencyType": "DAILY"
-    },
-    "runMode": "COMPREHENSIVE"
-  }
 }
